@@ -1873,6 +1873,11 @@ dependencies = [
     { name = "tavily-python" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "nodejs" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "ipykernel", specifier = ">=7.1.0" },
@@ -1902,6 +1907,9 @@ requires-dist = [
     { name = "tavily", specifier = ">=1.1.0" },
     { name = "tavily-python", specifier = ">=0.7.13" },
 ]
+
+[package.metadata.requires-dev]
+dev = [{ name = "nodejs", specifier = ">=0.1.1" }]
 
 [[package]]
 name = "markupsafe"
@@ -2133,6 +2141,15 @@ wheels = [
 ]
 
 [[package]]
+name = "nodejs"
+version = "0.1.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "optional-django" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/eb/ee/97ee0b973d072702eb2927c0eb90647cc0e4598663ed8e591c1ca4120dd9/nodejs-0.1.1.tar.gz", hash = "sha256:4c585fecc51a91b151bbc6dd01c0fb8d93f29f897a8298009205b59b80b52933", size = 2325, upload-time = "2015-03-22T10:15:32.115Z" }
+
+[[package]]
 name = "notebook-shim"
 version = "0.2.4"
 source = { registry = "https://pypi.org/simple" }
@@ -2317,6 +2334,12 @@ sdist = { url = "https://files.pythonhosted.org/packages/aa/1b/90701d91e6300d9f2
 wheels = [
     { url = "https://files.pythonhosted.org/packages/07/90/68152b7465f50285d3ce2481b3aec2f82822e3f52e5152eeeaf516bab841/opentelemetry_semantic_conventions-0.58b0-py3-none-any.whl", hash = "sha256:5564905ab1458b96684db1340232729fce3b5375a06e140e8904c78e4f815b28", size = 207954, upload-time = "2025-09-11T10:28:59.218Z" },
 ]
+
+[[package]]
+name = "optional-django"
+version = "0.1.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/da/9e/b9b6a3854c613da94d695a2a52ca70ad1f0c65337c1b6e37f5f447964d19/optional-django-0.1.0.tar.gz", hash = "sha256:77d6b9fb74bda30583e1af4683a39e0af725cea6003252bba75838f4939326c5", size = 9530, upload-time = "2015-03-22T10:10:14.628Z" }
 
 [[package]]
 name = "orjson"
